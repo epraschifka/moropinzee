@@ -14,10 +14,12 @@
 
 class Player
 {
+private:
+    std::string name;
+
 public:
     virtual Move *makeMove() = 0;
     std::string getName();
-    std::string name;
 };
 
 #endif
