@@ -1,4 +1,4 @@
-#include <Robot.h>
+#include "Robot.h"
 int Robot::outcome(Move *opponent)
 {
     if (opponent->getName() == "Ninja" || opponent->getName() == "Zombie")
@@ -6,9 +6,11 @@ int Robot::outcome(Move *opponent)
 
     if (opponent->getName() == "Monkey" || opponent->getName() == "Pirate")
         return -1;
+
+    return 0;
 }
 
-std::string getName()
+std::string Robot::getName()
 {
     return "Robot";
 }

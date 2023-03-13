@@ -1,4 +1,4 @@
-#include <Scissors.h>
+#include "Scissors.h"
 
 int Scissors::outcome(Move *opponent)
 {
@@ -7,9 +7,11 @@ int Scissors::outcome(Move *opponent)
 
     if (opponent->getName() == "Rock")
         return -1;
+
+    return 0;
 }
 
-std::string getName()
+std::string Scissors::getName()
 {
     return "Scissors";
 }
