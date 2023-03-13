@@ -13,7 +13,6 @@ Human::Human(std::string name)
 Move *Human::makeMove()
 {
     std::string move;
-    std::cout << "Enter move: ";
     std::cin >> move;
 
     if (move == "Monkey")
